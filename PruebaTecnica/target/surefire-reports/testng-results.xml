@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-24T17:33:59 CEST" name="Suite1" finished-at="2023-09-24T17:34:19 CEST" duration-ms="19916">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@7fab4be7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-09-24T17:33:59 CEST" name="TestDemo" finished-at="2023-09-24T17:34:19 CEST" duration-ms="19916">
+      <class name="TestRunner.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.Runner@7fab4be7]" started-at="2023-09-24T17:33:59 CEST" name="setUpClass" finished-at="2023-09-24T17:34:00 CEST" duration-ms="548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@24fc9aa5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.Runner@7fab4be7]" started-at="2023-09-24T17:34:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-24T17:34:19 CEST" duration-ms="19252" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Book a fligth"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Reset functionality on login page of Application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-ng-c1784957809="" ry-button="" color="gradient-yellow" class="passenger-carousel__cta passenger-carousel__cta--next ry-button--gradient-yellow" _nghost-ng-c414200528="" data-ref="seats-action__button-next">...</button> is not clickable at point (1444, 507). Other element would receive the click: <ry-overlay _ngcontent-ng-c866520027="" _nghost-ng-c2471414826=""></ry-overlay>
+  (Session info: chrome=117.0.5938.92)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e547f79aa0573b96df839f7c1e5483f0, clickElement {id=48F06C1A1B291E5BFD8175A8354806C9_element_564}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\Elia\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53542}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53542/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e547f79aa0573b96df839f7c1e5483f0)] -> xpath: //button[contains(@data-ref,'next')]]
+Session ID: e547f79aa0573b96df839f7c1e5483f0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-ng-c1784957809="" ry-button="" color="gradient-yellow" class="passenger-carousel__cta passenger-carousel__cta--next ry-button--gradient-yellow" _nghost-ng-c414200528="" data-ref="seats-action__button-next">...</button> is not clickable at point (1444, 507). Other element would receive the click: <ry-overlay _ngcontent-ng-c866520027="" _nghost-ng-c2471414826=""></ry-overlay>
+  (Session info: chrome=117.0.5938.92)
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e547f79aa0573b96df839f7c1e5483f0, clickElement {id=48F06C1A1B291E5BFD8175A8354806C9_element_564}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: C:\Users\Elia\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53542}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53542/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e547f79aa0573b96df839f7c1e5483f0)] -> xpath: //button[contains(@data-ref,'next')]]
+Session ID: e547f79aa0573b96df839f7c1e5483f0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+at Pages.Seats.clickNextFlight(Seats.java:52)
+at StepDefinition.MyStepdefs.clickOnNextFlight(MyStepdefs.java:127)
+at ✽.Click on Next Flight(file:///C:/Users/Elia/Desktop/PruebaTecnica/PruebaTecnica/src/test/java/Features/MyTest.feature:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.Runner@7fab4be7]" started-at="2023-09-24T17:34:19 CEST" name="tearDownClass" finished-at="2023-09-24T17:34:19 CEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.Runner -->
+    </test> <!-- TestDemo -->
+  </suite> <!-- Suite1 -->
+</testng-results>
