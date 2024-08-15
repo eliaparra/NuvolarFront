@@ -6,7 +6,7 @@ Feature: Reset functionality on login page of Application
     Given Open the Firefox and launch the application
 
     @ValidCredentials
-  Scenario: Book a fligth
+  Scenario: Buy a hat
 
     When Search for "hats for men"
     And Add first hat to Cart with quantity 2
